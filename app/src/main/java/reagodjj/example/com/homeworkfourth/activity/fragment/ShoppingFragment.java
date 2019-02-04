@@ -1,6 +1,7 @@
 package reagodjj.example.com.homeworkfourth.activity.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,11 +32,13 @@ import java.util.List;
 import java.util.Objects;
 
 import reagodjj.example.com.homeworkfourth.R;
+import reagodjj.example.com.homeworkfourth.activity.MainActivity;
 import reagodjj.example.com.homeworkfourth.adapter.ListViewAdapter;
 import reagodjj.example.com.homeworkfourth.entity.FoodInfo;
 import reagodjj.example.com.homeworkfourth.entity.FoodResult;
 
 public class ShoppingFragment extends Fragment implements AdapterView.OnItemClickListener {
+    private ImageView ivBack;
     private GridView gvStore;
     private ListView lvFoodItem;
     private List<FoodInfo> foodInfoList = new ArrayList<>();
@@ -64,7 +68,16 @@ public class ShoppingFragment extends Fragment implements AdapterView.OnItemClic
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        gvStore = Objects.requireNonNull(getView()).findViewById(R.id.gv_store);
+        ivBack = Objects.requireNonNull(getView()).findViewById(R.id.iv_back);
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), MainActivity.class));
+                Objects.requireNonNull(getActivity()).finish();
+            }
+        });
+
+        gvStore = getView().findViewById(R.id.gv_store);
         String titleList[] = getResources().getStringArray(R.array.store_order);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(Objects.requireNonNull(getActivity()),
                 R.layout.grid_store_order_item, titleList);
