@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">HomeworkFourth</string>
+    <string name="user_login">用户登录</string>
+    <string name="input_user_phone_mail">请输入用户名/手机/邮箱</string>
+    <string name="input_password">请输入登录密码</string>
+    <string name="login">登录</string>
+    <string name="find_password">找回密码</string>
+    <string name="free_register">免费注册</string>
+    <string name="user_register">用户注册</string>
+    <string name="register">注册</string>
+    <string name="user_rule">用户名设置小于6位！</string>
+    <string name="password_rule">密码设置小于6位！！</string>
+    <string name="user_password_error">用户名或密码错误！！</string>
+    <string name="train_ticket">车票</string>
+    <string name="user_unregister">该用户未注册！！</string>
+    <string name="beef">牛肉</string>
+    <string name="price">￥%1$s</string>
+    <string name="price_1">￥%1$2.2f</string>
+    <string name="price_down">￥%1$s拿下</string>
+    <string name="t_price">团购价：￥%1$2.2f</string>
+    <string name="new_user_one_yuan">新用户一元</string>
+    <string name="num_sold_out">已售：%1$d</string>
+    <string name="beijing">北京</string>
+    <string name="everybody_buy">--大家都在团--</string>
+    <string name="main_page">主页</string>
+    <string name="shopping">购物</string>
+    <string name="user">用户</string>
+    <string-array name="card_title">
+        <item>飞机</item>
+        <item>车票</item>
+        <item>汽车</item>
+        <item>蛋糕</item>
+        <item>美食</item>
+        <item>手表</item>
+        <item>电脑</item>
+        <item>手机</item>
+    </string-array>
+    <string name="hello_shopping_fragment">Hello shopping fragment</string>
+    <string name="hello_user_fragment">Hello user fragment</string>
+    <string name="pine_nuts_prawns">松仁大虾</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rating">评分：%1$2.1f</string>
+    <string name="product_detail_information">商品详细信息</string>
+    <string name="food_information">%1$s</string>
+    <string name="food_no_information">暂无信息</string>
+    <string name="buy_success">购买成功！！</string>
+    <string name="no_rating">评分</string>
+    <string name="popular_city">--热门城市--</string>
+    <string name="city">城市</string>
+    <string name="store">商家</string>
+    <string name="my_account">我的账户</string>
+    <string name="my_products">我的商品</string>
+    <string name="my_score">我的积分</string>
+    <string name="my_power">我的特权</string>
+    <string name="phone">电话</string>
+    <string name="qq">QQ</string>
+    <string name="we_chat">微信</string>
+    <string-array name="store_order">
+        <item>本地商家</item>
+        <item>外地商家</item>
+        <item>默认顺序</item>
+    </string-array>
+    <string-array name="grid_city">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>杭州</item>
+        <item>武汉</item>
+    </string-array>
+</resources>

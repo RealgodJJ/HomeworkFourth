@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.fragment.ShoppingFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/mediumseagreen" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/store"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/gv_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="40dp"
+        android:horizontalSpacing="0dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/grey" />
+
+    <ListView
+        android:id="@+id/lv_food_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp" />
+
+</LinearLayout>
